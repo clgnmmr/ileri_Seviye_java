@@ -1,5 +1,8 @@
 package springIntro;
 
+import org.springframework.stereotype.Component;
+
+@Component("database")
 public class MySqlCustomerDal implements ICustomerDal {
 	private String connectionString;
 
