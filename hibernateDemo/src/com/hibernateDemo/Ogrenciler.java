@@ -38,8 +38,10 @@ public class Ogrenciler {
 	public String getCinsiyet() {
 		return cinsiyet;
 	}
+	
 	public void setCinsiyet(String cinsiyet) {
-		this.cinsiyet = cinsiyet;
+		   this.cinsiyet = cinsiyet;
+		
 	}
 	
 	

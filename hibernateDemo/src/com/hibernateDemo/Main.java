@@ -15,11 +15,18 @@ public class Main {
 		
 		try {
 			session.beginTransaction();
+			// hibernate query Languages
+			//select * from ogrenciler
+			//from Ogrenciler o where o.cinsiyet='E' AND o.ogrenci_ismi LİKE 'M%'
+			//from Ogrenciler o where o.sinif='11'
+			// ASC - Ascending
+			// DESC - Descending
+			//from Ogrenciler o  ORDER BY o.ogrenci_ismi desc
 			List<Ogrenciler> ogrenciler=session.createQuery("from Ogrenciler").getResultList();
 			
 			for(Ogrenciler ogrenci:ogrenciler) {
 				
-				System.out.println(ogrenci.getOgrenci_ismi() );
+				System.out.println(ogrenci.getOgrenci_ismi()+" "+ogrenci.getOkul_no() );
 				
 			}
 			
