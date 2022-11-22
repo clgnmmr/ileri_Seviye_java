@@ -14,7 +14,7 @@ public class Update {
 		try {
 			session.beginTransaction();
 			
-			Ogrenciler ogrenci=session.get(Ogrenciler.class, 127);
+			Ogrenciler ogrenci=session.get(Ogrenciler.class, 120);
 			//System.out.println(ogrenci.getOgrenci_ismi());
 			ogrenci.setOgrenci_ismi("isim degistirildi");
 			session.save(ogrenci);
